@@ -40,6 +40,7 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
         console.log(+"1" +  "1" + "2");
         console.log( "A" - "B" + "2");
         console.log( "A" - "B" + 2);
+        
   * 1.1.4 What's the difference between using “let” and “var” to declare a variable?
   * 1.1.5 What's the difference between null and undefined?
 * 1.2 - Scope
