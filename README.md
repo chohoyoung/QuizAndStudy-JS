@@ -28,7 +28,7 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
 * 1.1 - Typeof
   * 1.1.1 What is a potential pitfall with using
   
-  아래코드
+  code
   
         typeof bar === "object" 
   
@@ -36,7 +36,7 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
   * 1.1.2 What is NaN? What is its type? How can you reliably test if a value is equal to NaN?
   * 1.1.3 What will the code below output to the console and why ?
   
-    아래코드
+    code
         
         console.log(1 +  "2" + "2");
         console.log(1 +  +"2" + "2");
@@ -49,6 +49,8 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
   * 1.1.5 What's the difference between null and undefined?
 * 1.2 - Scope
   * 1.2.1 What will the code below output to the console and why?
+  
+    code
     
         var myObject = {
         foo: "bar",
@@ -66,6 +68,8 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
     
   * 1.2.2 What is the significance of, and reason for, wrapping the entire content of a JavaScript source file in a function block?
   * 1.2.3 Consider the following code snippet:
+  
+    code
     
         for (var i = 0; i < 5; i++) {
           var btn = document.createElement('button');
@@ -79,19 +83,26 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
   * 1.2.4 What is a “closure” in JavaScript? Provide an example.
   * 1.2.5 What will be the output of the following code:
     
+    code
+    
         for (var i = 0; i < 5; i++) {
             setTimeout(function() { console.log(i); }, i * 1000 );
         }
     
     Explain your answer. How could the use of closures help here?
   * 1.2.6 Consider the code snippet below. What will the console output be and why?
+  
+    code
     
         (function(x) {
             return (function(y) {
                 console.log(x);
             })(2)
         })(1);
+        
   * 1.2.7 What will the following code output to the console and why:
+  
+    code
     
         var hero = {
             _name: 'John Doe',
@@ -111,6 +122,8 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
   * 1.3.1 What is the significance, and what are the benefits, of including 'use strict' at the beginning of a JavaScript source file?
   * 1.3.2 Consider the two functions below. Will they both return the same thing? Why or why not?
     
+    code
+    
         function foo1()
         {
           return {
@@ -128,6 +141,8 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
         
   * 1.3.3 The following recursive code will cause a stack overflow if the array list is too large. How can you fix this and still retain the recursive pattern?
     
+    code
+    
         var list = readHugeList();
         
         var nextListItem = function() {
@@ -142,12 +157,16 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
 * 1.4 - Numbers
   * 1.4.1 What will the code below output? Explain your answer.
     
+    code
+    
         console.log(0.1 + 0.2);
         console.log(0.1 + 0.2 == 0.3);
         
   * 1.4.2 Discuss possible ways to write a function isInteger(x) that determines if x is an integer.
 * 1.5 - Events and Timing
   * 1.5.1 In what order will the numbers 1-4 be logged to the console when the code below is executed? Why?
+    
+    code
     
         (function() {
             console.log(1); 
@@ -160,10 +179,14 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
 * 1.6 - Functions
   * 1.6.1 Write a sum method which will work properly when invoked using either syntax below.
     
+    code
+    
         console.log(sum(2,3));   // Outputs 5
         console.log(sum(2)(3));  // Outputs 5
         
   * 1.6.2 What will the following code output to the console:
+    
+    code
     
         console.log((function f(n){return ((n > 1) ? n * f(n-1) : n)})(10));
     
@@ -173,6 +196,8 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
   * 1.6.5 When would you use document.write()?
 * 1.7 - Reference
   * 1.7.1 What will the code below output to the console and why?
+    
+    code
     
         var arr1 = "john".split('');
         var arr2 = arr1.reverse();
@@ -184,6 +209,8 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
 * 1.8 - Comparison and Logical Operators
   * 1.8.1 What would the following lines of code output to the console?
     
+    code
+    
         console.log("0 || 1 = "+(0 || 1));
         console.log("1 || 2 = "+(1 || 2));
         console.log("0 && 1 = "+(0 && 1));
@@ -192,11 +219,15 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
     Explain your answer.
   * 1.8.2 What will be the output when the following code is executed? Explain.
     
+    code
+    
         console.log(false == '0')
         console.log(false === '0')
         
 * 1.9 - Objects
   * 1.9.1 What is the output out of the following code? Explain your answer.
+    
+    code
     
         var a={},
             b={key:'b'},
@@ -218,6 +249,8 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
     
     a callback function (that takes a DOM element as its argument)
   * 1.10.2 Given a node from a DOM tree find the node in the same position from an identical DOM tree. See diagram below for clarity.
+    
+    code
     
          A         B
         
