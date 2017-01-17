@@ -28,11 +28,15 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
 * 1.1 - Typeof
   * 1.1.1 What is a potential pitfall with using
   
-      typeof bar === "object" 
+  아래코드
+  
+        typeof bar === "object" 
   
   to determine if bar is an object? How can this pitfall be avoided?
   * 1.1.2 What is NaN? What is its type? How can you reliably test if a value is equal to NaN?
   * 1.1.3 What will the code below output to the console and why ?
+  
+    아래코드
         
         console.log(1 +  "2" + "2");
         console.log(1 +  +"2" + "2");
