@@ -8,33 +8,40 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
 
 ### 1.2.1 기본
 * 1.0 - Javascript Principles
-  * 1.0.1 Can you name two programming paradigms important for JavaScript app developers?
-  * 1.0.2 What is functional programming?
-  * 1.0.3 What is the difference between classical inheritance and prototypal inheritance?
-  * 1.0.4 What are the pros and cons of functional programming vs object-oriented programming?
-  * 1.0.5 When is classical inheritance an appropriate choice?
-  * 1.0.6 What does “favor object composition over class inheritance” mean?
-  * 1.0.7 What are two-way data binding and one-way data flow, and how are they different?
-  * 1.0.8 What are the pros and cons of monolithic vs microservice architectures?
-  * 1.0.9 What is asynchronous programming, and why is it important in JavaScript?
-  * 1.0.10 What is Javascript's hoisting?
-  * 1.0.11 What Is AMD, CommonJS, and UMD?
-  * 1.0.12 What is IIFE, or Immediately-Invoked Function Expression?
-  * 1.0.13 Explain why the following doesn't work as an IIFE: function foo(){ }();. What needs to be changed to properly make it an IIFE?
-  * 1.0.14 What's the difference between feature detection, feature inference, and using the UA string?
-  * 1.0.15 Explain AJAX in as much detail as possible-JavaScript. What are some advantages and disadvantages to using AJAX?
-  * 1.0.16 What's the difference between an "attribute" and a "property"?
-  * 1.0.17 Why is extending built-in JavaScript objects not a good idea?
+  * 1.0.1 javascript 어플리케이션을 위한 2개의 개발 패러다임은 무엇이라고 생각하시나요?
+  * 1.0.2 함수형 프로그래밍이란 무엇일까요?
+  * 1.0.3 고전적 상속과 prototype상속에 대한 차이점이 무엇일까요?
+  * 1.0.4 함수형 프로그래밍과 객체지향적 프로그래밍의 대한 장단점은 무엇일까요? 
+  * 1.0.5 고전적 상속은 어떨때 적절한 선택이죠?
+  * 1.0.6 클래스 상속보다 Object 구성을 선호하는 이유는 무엇이나요?
+  * 1.0.7 양방향 데이터 바인딩이랑 단방향 데이터 바인딩 흐름이 무엇이 다른것이며 어떻게 다른 것이죠?
+  * 1.0.8 monolithic와 microservice 아키택쳐의 장단점은 무엇이나요?
+  * 1.0.9 비동기 프로그래밍이란 무엇이며 왜 Javascript에서 중요할까요?
+  * 1.0.10 Javascript 호이스팅이란 무엇이나요?
+  * 1.0.11 AMD, CommonJs, UMD가 무엇이나요?
+  * 1.0.12 IIFE란 무엇이며 Immediately-Invoked Function Expression은 무엇이나요?
+  * 1.0.13 아래 코드가 IIFE로 작동하지 않는 이유를 설명해주시고   
+    
+    code
+    
+        function foo(){ }();
+         
+    제데로 IIFE로 동작하려면 무엇을 해주어야 하나요?
+        
+  * 1.0.14 feature detection, feature inference, using UA string의 차이점이 무엇입니까?
+  * 1.0.15 Ajax를 설명해주시고 Ajax의 장단점이 무엇입니까?
+  * 1.0.16 attribute와 property의 차이점은 무엇입니까?
+  * 1.0.17 내장 javascript 객체를 확장하는것이 좋은 생각이 아닌 이유는 무엇입니까?
 * 1.1 - Typeof
-  * 1.1.1 What is a potential pitfall with using
+  * 1.1.1 이코드는 잠재적인 문제가 있습니다 무엇일까요?
   
   code
   
         typeof bar === "object" 
   
-  to determine if bar is an object? How can this pitfall be avoided?
-  * 1.1.2 What is NaN? What is its type? How can you reliably test if a value is equal to NaN?
-  * 1.1.3 What will the code below output to the console and why ?
+  bar가 객체인지 확인하려면? 이 함정을 어떻게 해결할 수 있을까요?
+  * 1.1.2 NaN란 무엇인가요? 그 유형은 무엇인가요? 값이 NaN과 동등한지 안정적으로 테스트가 가능하나요?
+  * 1.1.3 아래의 코드가 콘솔에 어떻게 출력이 될꺼 같나요? 그리고 그렇게 출력되는 이유는 무엇일까요?
   
     code
         
@@ -45,10 +52,10 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
         console.log( "A" - "B" + "2");
         console.log( "A" - "B" + 2);
         
-  * 1.1.4 What's the difference between using “let” and “var” to declare a variable?
-  * 1.1.5 What's the difference between null and undefined?
+  * 1.1.4 변수 선언시 let과 var의 차이점을 무엇인가요?
+  * 1.1.5 null과 undefined의 차이점은 무엇인가요?
 * 1.2 - Scope
-  * 1.2.1 What will the code below output to the console and why?
+  * 1.2.1 아래코드의 결과가 왜 그렇게 나오는지 설명을 해주세요.
   
     code
     
@@ -67,7 +74,7 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
         myObject.func();
     
   * 1.2.2 What is the significance of, and reason for, wrapping the entire content of a JavaScript source file in a function block?
-  * 1.2.3 Consider the following code snippet:
+  * 1.2.3 다음 코드를 보고 질문에 답해주세요.
   
     code
     
@@ -78,10 +85,10 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
           document.body.appendChild(btn);
         }
     
-    (a) What gets logged to the console when the user clicks on “Button 4” and why?
-    (b) Provide one or more alternate implementations that will work as expected.
-  * 1.2.4 What is a “closure” in JavaScript? Provide an example.
-  * 1.2.5 What will be the output of the following code:
+    (a) Button 4를 클릭시 호출되는 로직에 관해서 설명해주세요?
+    (b) 원하는 기능을 구현하기 위해선 어떻게 해야할지 만들어보세요.
+  * 1.2.4 클로저란 무엇인가요?
+  * 1.2.5 다음 코드의 결과는 무엇인가요?:
     
     code
     
@@ -89,8 +96,8 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
             setTimeout(function() { console.log(i); }, i * 1000 );
         }
     
-    Explain your answer. How could the use of closures help here?
-  * 1.2.6 Consider the code snippet below. What will the console output be and why?
+    원하는 결과를 만들기 위해서 클로저를 어떻게 쓸 수 있을까요?
+  * 1.2.6 (1),(2)를 살펴보고 왜 이런 출력이 나오는지 설명해주세요 
   
     code
     
@@ -100,7 +107,7 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
             })(2)
         })(1);
         
-  * 1.2.7 What will the following code output to the console and why:
+  * 1.2.7 아래로직을 실행하면 출력되는 항목에 대해서 왜 그렇게 출력되는지 설명해주세요. :
   
     code
     
@@ -116,11 +123,11 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
         console.log(stoleSecretIdentity());
         console.log(hero.getSecretIdentity());
     
-    What is the issue with this code and how can it be fixed.
-  * 1.2.8 How and why would you use closure?
+    이코드의 문제점은 무엇이며 어떻게 고칠 수 있을까요?
+  * 1.2.8 클로저를 왜 사용하나요?
 * 1.3 - Error Handling
-  * 1.3.1 What is the significance, and what are the benefits, of including 'use strict' at the beginning of a JavaScript source file?
-  * 1.3.2 Consider the two functions below. Will they both return the same thing? Why or why not?
+  * 1.3.1 Javascript에서 소스 시작시점에 'use strict'를 사용하는 이유는 무엇인가요?
+  * 1.3.2 아래 코드는 동일한 것을 반환하는데 왜그런지 설명해주세요.
     
     code
     
@@ -139,7 +146,7 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
           };
         }
         
-  * 1.3.3 The following recursive code will cause a stack overflow if the array list is too large. How can you fix this and still retain the recursive pattern?
+  * 1.3.3 아래 재귀호출 코드는 배열목록이 너무크면 stack overflow를 발생시킵니다. 이문제를 어떻게 해결하고 재귀패턴을 유지 할 수 있을까요?
     
     code
     
@@ -155,16 +162,16 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
         };
         
 * 1.4 - Numbers
-  * 1.4.1 What will the code below output? Explain your answer.
+  * 1.4.1 아래코드는 무엇을 출력할까요? 왜 그렇게 출력되는지 설명해주세요.
     
     code
     
         console.log(0.1 + 0.2);
         console.log(0.1 + 0.2 == 0.3);
         
-  * 1.4.2 Discuss possible ways to write a function isInteger(x) that determines if x is an integer.
+  * 1.4.2 x가 정수인지 판단하는 isInteger(x) 함수를 만들어주세요.
 * 1.5 - Events and Timing
-  * 1.5.1 In what order will the numbers 1-4 be logged to the console when the code below is executed? Why?
+  * 1.5.1 아래코드에서 console.log(4)가 콘솔에 찍히는 순서를 알려주시고 왜 그런지 설명해주세요?
     
     code
     
@@ -175,27 +182,27 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
             console.log(4);
         })();
         
-  * 1.5.2 What is Javascript's Event Bubbling and Capturing?
+  * 1.5.2 javascript의 버블링 캡쳐링이란 무엇인가요?
 * 1.6 - Functions
-  * 1.6.1 Write a sum method which will work properly when invoked using either syntax below.
+  * 1.6.1 아래 로직을 제데로 동작시킬수 있는 sum을 구현해 주세요.
     
     code
     
         console.log(sum(2,3));   // Outputs 5
         console.log(sum(2)(3));  // Outputs 5
         
-  * 1.6.2 What will the following code output to the console:
+  * 1.6.2 다음코드는 콘솔에 어떤 것을 출력 시켜주나요?:
     
     code
     
         console.log((function f(n){return ((n > 1) ? n * f(n-1) : n)})(10));
     
-    Explain your answer.
-  * 1.6.3 Difference between: function Person(){}, var person = Person(), and var person = new Person()?
-  * 1.6.4 What's the difference between .call and .apply?
-  * 1.6.5 When would you use document.write()?
+    왜 그렇게 출력되는지 설명해주세요.
+  * 1.6.3 다른점이 뭐죠? : function Person(){}, var person = Person(), and var person = new Person()?
+  * 1.6.4 .call()과 .apply()의 차이점을 설명해주세요. 
+  * 1.6.5 document.write()를 언제 사용 하시겠습니까?
 * 1.7 - Reference
-  * 1.7.1 What will the code below output to the console and why?
+  * 1.7.1 아래 코드가 출력되는 결과물이 왜 그렇게 출력되는지 설명해주세요.
     
     code
     
@@ -207,7 +214,7 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
         console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));
         
 * 1.8 - Comparison and Logical Operators
-  * 1.8.1 What would the following lines of code output to the console?
+  * 1.8.1 아래 코드들이 뭐가 출력될까요? 그리고 그렇게 출력되는 이유를 설명해주세요.
     
     code
     
@@ -216,8 +223,7 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
         console.log("0 && 1 = "+(0 && 1));
         console.log("1 && 2 = "+(1 && 2));
         
-    Explain your answer.
-  * 1.8.2 What will be the output when the following code is executed? Explain.
+  * 1.8.2 아래코드는 무엇을 출력할까요? 그리고 왜 그런지 설명해주세요.
     
     code
     
@@ -225,7 +231,7 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
         console.log(false === '0')
         
 * 1.9 - Objects
-  * 1.9.1 What is the output out of the following code? Explain your answer.
+  * 1.9.1 다음 출력의 결과는 무엇입니까? 그리고 왜 그렇게 되는지 설명해주세요.
     
     code
     
@@ -239,7 +245,7 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
         console.log(a[b]);
         
   * 1.9.2 Compare and contrast objects and hashtables in JavaScript.
-  * 1.9.3 What's the difference between host objects and native objects?
+  * 1.9.3 host object와 native object의 차이점은 무엇입니까?
 * 1.10 - DOM
   * 1.10.1 Create a function that, given a DOM Element on the page, will visit the element itself and all of its descendents (not just its immediate children). For each element visited, the function should pass that element to a provided callback function.
     
@@ -262,23 +268,23 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
               \        \
                O        O
 * 1.11 - Prototype
-  * 1.11.1 Describe inheritance and the prototype chain in JavaScript. Give an example.
-  * 1.11.2 When is prototypal inheritance an appropriate choice?
-  * 1.11.3 Explain Function.prototype.bind
+  * 1.11.1 javascript에서 상속 및 prototype 체인에 관해서 설명해주세요.
+  * 1.11.2 prototype상속은 언제 쓰는게 적절한가요??
+  * 1.11.3 Function.prototype.bind에 대해서 설명해보세요.
 
 ### 1.2.2 알고리즘
 
 * 2.1 - String Palindrome
 
-  Write a simple function (less than 80 characters) that returns a boolean indicating whether or not a string is a palindrome.
+  문자열이 회문(앞으로/반대로 읽어도 동일한 문자열)인지 알아내는 코드를 만들어주세요 (80자 내외로).
 
 * 2.2 - Square Root
 
-  Manually calculate the square root of a number with Javascript.
+  숫자의 제곱근을 수동(?)으로 계산 합니다.
 
 * 2.3 - Flattening Array
 
-  Can you write a function that deeply flattens an array?
+  아래처럼 배열을 한배열로 만들어 주는 함수를 만들어주세요.
 
       //example
       input = [0, 1, [2, 3], [[4, [5]]]];
@@ -286,7 +292,7 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
 
 * 2.4 - Reordering Objects in an Array
 
-  We have an array of objects A and an array of indexes B. Reorder objects in array A with given indexes in array B. Do not change array A's length. 
+  A와 B배열이 있습니다 B는 A의 인덱스를 나타내고 있습니다. 인덱스 배열(B)를 통해서 A배열을 정렬해주세요. A배열의 크기는 증가 하면 안됩니다. 
   
       //example
       var A = [C, D, E, F, G];
@@ -297,26 +303,21 @@ Javascript에 관한 퀴즈 및 그에 대한 세부 정리하는 Repository입�
 
 * 2.5 - Replacing Substring
 
-  Given a string Sting="ABCSC" Check whether it contains a Substring="ABC"?
+  ABCSC문자열이 있는데 만약 여기 안에 ABC가 포함되는지 확인하는 함수를 만들어주세요/
   
-  1) If no , return "-1". 
+  1) 없다면 -1을 리턴합니다. 
   
-  2) If yes , remove the substring from string and return "SC". 
+  2) 있다면 ABC를 제거 하고 SC를 리턴합니다. 
 
 * 2.6 - Move Zeroes
 
-  Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+  배열 num에서 0이 아닌 모든 수의 순서를 유지하며 0을 가장 뒤로 이동시키는 함수를 만들어주세요.
   
-  For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0].
+  예를들면, nums = [0, 1, 0, 3, 12], 함수호출후 다음과 같은 결과가 나와야 합니다. [1, 3, 12, 0, 0].
   
   Note:
   
-  You must do this in-place without making a copy of the array.
-  Minimize the total number of operations.
-
-
-
- 
+  별도 배열 사본을 만들지 않고 최소한의 코드로 만들어주세요.
 
 기본상속, prototype상속
 http://unikys.tistory.com/320
