@@ -13,6 +13,7 @@ function Monkey() {
 
 Monkey.prototype = new Animal();
 
+
 var chimp = new Monkey();
 console.log(chimp.cry);
 console.log(chimp.chop);

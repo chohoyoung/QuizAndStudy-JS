@@ -13,10 +13,17 @@ function Monkey() {
 
 Monkey.prototype = Animal;
 
+Animal.cry = "Power";
+
 var chimp = new Monkey();
+
+console.log(chimp);
+
 console.log(chimp.cry);
 console.log(chimp.chop);
 chimp.sayHello();
+
+console.log(chimp.__proto__);
 
 console.log(chimp instanceof Monkey);   // true
 //console.log(chimp instanceof Animal);   // Error
